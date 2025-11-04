@@ -1,17 +1,10 @@
-# EX02 - Beto Verde
+# Beto Verde - EX03
 
-## Responsividade
-- 5 breakpoints: 1200px, 992px, 768px, 576px, 480px
-- Grid customizado de 12 colunas
-- Mobile-first
+Dark Mode, PWA, botão voltar ao topo e acessibilidade avançada.
 
-## Navegação
-- Menu hambúrguer funcional
-- Scroll suave com `href="#id"`
-- Fecha ao clicar em item (mobile)
+## Funcionalidades
+- Toggle Claro/Escuro
+- Botão voltar ao topo
+- PWA com manifest.json
+- Acessibilidade completa
 
-## Componentes
-- Cards responsivos
-- Botões com hover/focus
-- Formulário estilizado
-- Badges de status
