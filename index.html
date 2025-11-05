@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beto Verde - ONG Ambiental">
+  <title>Beto Verde - EX02</title>
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/grid.css">
+  <link rel="stylesheet" href="./src/css/components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FAVICONS -->
+<link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/apple-touch-icon.png">
+
+<!-- PWA -->
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#1a7a37">
+
+<!-- OPEN GRAPH / SEO -->
+<meta property="og:title" content="Beto Verde - ONG Ambiental">
+<meta property="og:description" content="Reflorestamento, educação ambiental e limpeza de rios com impacto real.">
+<meta property="og:image" content="./src/assets/images/hero.jpg">
+<meta property="og:url" content="https://betoverde.org">
+<meta property="og:type" content="website">
+
+<!-- DARK MODE TOGGLE -->
+<link rel="stylesheet" href="./src/css/dark-mode.css">
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para conteúdo</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio" aria-label="Beto Verde">
+        <img src="./src/assets/images/logo.jpg" alt="Logo Beto Verde" width="120">
+      </a>
+     <button id="btn-burger" class="burger" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu" style="background:#fff;padding:0.5rem;z-index:9999;position:relative;">
+  <div style="width:28px;height:20px;position:relative;">
+    <span style="background:#000;width:100%;height:3px;position:absolute;top:50%;left:0;transform:translateY(-50%);border-radius:3px;"></span>
+    <span style="background:#000;width:100%;height:3px;position:absolute;top:2px;left:0;border-radius:3px;"></span>
+    <span style="background:#000;width:100%;height:3px;position:absolute;bottom:2px;left:0;border-radius:3px;"></span>
+  </div>
+</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Menu principal">
+        <ul role="menubar">
+          <li><a role="menuitem" href="#inicio">Início</a></li>
+          <li><a role="menuitem" href="#projetos">Projetos</a></li>
+          <li><a role="menuitem" href="#voluntario">Voluntário</a></li>
+          <li><a role="menuitem" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Com Beto, a natureza <span class="highlight">respira</span></h1>
+        <p>Reflorestamento, educação ambiental e limpeza de rios com impacto real.</p>
+        <a href="#voluntario" class="btn btn-primary">Quero ajudar</a>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <h2 class="section-title">Nossos Projetos</h2>
+      <div class="grid-12">
+        <div class="col-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xxs-12">
+          <article class="card">
+            <img src="./src/assets/images/reflorestamento.jpg" alt="Reflorestamento Local" loading="lazy">
+            <div class="card-body">
+              <h3>Reflorestamento Local</h3>
+              <p>Plantio de mudas nativas em áreas degradadas.</p>
+              <div class="card-footer">
+                <span class="badge badge--Ativo">Ativo</span>
+                <a href="#projetos" class="btn btn-small">Saiba mais</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xxs-12">
+          <article class="card">
+            <img src="./src/assets/images/educacao.jpg" alt="Educação Ambiental" loading="lazy">
+            <div class="card-body">
+              <h3>Educação Ambiental</h3>
+              <p>Oficinas em escolas e comunidades.</p>
+              <div class="card-footer">
+                <span class="badge badge--Em-curso">Em curso</span>
+                <a href="#projetos" class="btn btn-small">Saiba mais</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xxs-12">
+          <article class="card">
+            <img src="./src/assets/images/limpeza.jpg" alt="Limpeza de Rios" loading="lazy">
+            <div class="card-body">
+              <h3>Limpeza de Rios</h3>
+              <p>Mutirões comunitários para despoluição.</p>
+              <div class="card-footer">
+                <span class="badge badge--Urgente">Urgente</span>
+                <a href="#projetos" class="btn btn-small">Saiba mais</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOLUNTÁRIO -->
+    <section id="voluntario" class="section volunteer-section">
+      <h2 class="section-title">Seja Voluntário com Beto</h2>
+      <p class="lead">Faça parte da mudança. Sua ação faz a diferença.</p>
+      <form class="form-volunteer" novalidate>
+        <div class="form-group">
+          <label for="name">Nome completo *</label>
+          <input id="name" type="text" required minlength="2">
+          <div class="field-msg"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail *</label>
+          <input id="email" type="email" required>
+          <div class="field-msg"></div>
+        </div>
+        <div class="form-group checkbox">
+          <label><input type="checkbox" id="hasCar"> Tenho carro disponível</label>
+        </div>
+        <div class="form-group" id="plate-group" style="display:none;">
+          <label for="plate">Placa do veículo</label>
+          <input id="plate" type="text" placeholder="ABC-1234">
+          <div class="field-msg"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Enviar cadastro</button>
+      </form>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contact-section">
+      <h2 class="section-title">Fale com Beto</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><strong>Telefone:</strong> 11 98048-4344</p>
+          <p><a href="mailto:contato@betoverde.org" class="btn btn-outline">Enviar e-mail</a></p>
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="current-year"></span> Beto Verde - ONG Ambiental</p>
+      <p class="footer-tagline">Com Beto, a natureza tem voz.</p>
+    </div>
+  </footer>
+
+  <!-- JS PARA HAMBÚRGUER, SCROLL E FORMULÁRIO -->
+ <script>
+  // Ano atual
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+
+  // HAMBÚRGUER
+  const burger = document.getElementById('btn-burger');
+  const nav = document.getElementById('nav-menu');
+  if (burger && nav) {
+    burger.onclick = () => {
+      const isOpen = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', isOpen);
+    };
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.onclick = () => {
+        if (window.innerWidth <= 768) {
+          nav.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+        }
+      };
+    });
+  }
+
+  // SCROLL SUAVE
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href !== '#' && href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // FORMULÁRIO
+  const form = document.querySelector('.form-volunteer');
+  const hasCar = document.getElementById('hasCar');
+  const plateGroup = document.getElementById('plate-group');
+  hasCar.onchange = () => {
+    plateGroup.style.display = hasCar.checked ? 'block' : 'none';
+  };
+  form.onsubmit = (e) => {
+    e.preventDefault();
+    let valid = true;
+    form.querySelectorAll('.field-msg').forEach(msg => msg.textContent = '');
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    if (name.length < 2) {
+      showError(form.name, 'Nome deve ter pelo menos 2 caracteres');
+      valid = false;
+    }
+    if (!email.includes('@')) {
+      showError(form.email, 'E-mail inválido');
+      valid = false;
+    }
+    if (hasCar.checked && !/^[A-Z]{3}-\d{4}$/.test(form.plate.value)) {
+      showError(form.plate, 'Placa no formato ABC-1234');
+      valid = false;
+    }
+    if (valid) {
+      alert('Cadastro enviado com sucesso!');
+      form.reset();
+      plateGroup.style.display = 'none';
+    }
+  };
+  function showError(input, msg) {
+    const msgEl = input.parentElement.querySelector('.field-msg');
+    msgEl.textContent = msg;
+    input.style.borderColor = '#d32f2f';
+  }
+  
+  // DARK MODE
+const darkModeToggle = document.createElement('button');
+darkModeToggle.id = 'dark-mode-toggle';
+darkModeToggle.innerHTML = 'Escuro';
+darkModeToggle.setAttribute('aria-label', 'Alternar modo escuro');
+darkModeToggle.style.marginLeft = '1rem';
+document.querySelector('.nav-inner').appendChild(darkModeToggle);
+
+darkModeToggle.onclick = () => {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  darkModeToggle.innerHTML = isDark ? 'Claro' : 'Escuro';
+  localStorage.setItem('darkMode', isDark);
+};
+
+// CARREGAR PREFERÊNCIA
+if (localStorage.getItem('darkMode') === 'true' || 
+    (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.body.classList.add('dark-mode');
+  darkModeToggle.innerHTML = 'Claro';
+}
+
+// VOLTAR AO TOPO
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+  
+  
+</script>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button id="back-to-top" aria-label="Voltar ao topo" style="display:none;">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+
+</body>
+</html>
